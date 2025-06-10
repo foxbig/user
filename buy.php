@@ -8,12 +8,36 @@ $id = $_SESSION['id'];
     <meta charset="UTF-8">
     <title>購買紀錄</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
-        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-        th, td { padding: 12px; border: 1px solid #ccc; text-align: left; }
-        th { background-color: #444; color: white; }
-        h1 { text-align: center; }
-        .container { max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f2f2f2; 
+            padding: 20px; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+         }
+        th, td { 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #444; 
+            color: white; 
+        }
+        h1 { 
+            text-align: center; 
+        }
+        .container {
+             max-width: 1000px; 
+             margin: auto; 
+             background: #fff; 
+             padding: 20px; 
+             border-radius: 10px;
+             }
         ul { 
             padding-left: 20px; 
         }

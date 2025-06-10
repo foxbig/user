@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include "db.php"?>                                                                                                
+    <?php include "db.php"?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -16,11 +16,14 @@
   }
   .fixed-bottom-button {
         position: fixed;
+        /* 設定元素為固定定位，這樣元素相對於視口固定，滾動頁面時不會移動 */
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        /* 將元素沿X軸（水平）移動50%的距離，通常用來水平居中元素 */
         text-align: center;
         z-index: 100;
+        /* 設定元素的層疊順序為 100，數值越大，元素會顯示在其他元素的上層 */
         }
 </style>
 <body align="center">

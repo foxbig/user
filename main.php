@@ -21,15 +21,15 @@ $id = $_SESSION["id"];
             background-color: #1f1f1f;
             color: #fff;
             font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0;  /* 這行去除了所有元素的外邊距，讓元素之間的間隔為 0 */
+            padding: 0; /* 這行去除了所有元素的內邊距，讓元素內容與邊框之間的空白為 0 */
         }
         header {
             background-color: #333;
             padding: 20px;
             text-align: center;
-            font-size: 2rem;
-            text-transform: uppercase;
+            font-size: 2rem;/* 設定字體大小為 2rem，'rem'是相對於根元素的字體大小的單位 */
+            text-transform: uppercase;/* 將文字轉換為大寫字母 */
         }
         .hero {
             background-image: url("前端照片/gu達.png");

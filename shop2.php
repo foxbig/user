@@ -84,9 +84,11 @@ if (isset($_POST['checkout'])) {
         header {
             background-color: #343a40;
             color: white;
-            padding: 20px 0;
+            padding: 20px 0; 
+            /* 上下內邊距為 20px，左右內邊距為 0 */
             text-align: center;
-            font-size: 2rem;
+            font-size: 2rem; 
+            /* 設定字體大小為根元素字體的 2 倍，通常為 32px */
         }
 
         nav {
@@ -109,7 +111,8 @@ if (isset($_POST['checkout'])) {
 
         /* Filter & Category */
         .category-filter {
-            margin: 20px auto;
+            margin: 20px auto; 
+            /* 上下外邊距為 20px，左右自動對齊（通常讓區塊水平置中） */
             text-align: center;
         }
 
@@ -128,8 +131,10 @@ if (isset($_POST['checkout'])) {
         /* Product Container */
         .container {
             display: grid;
+            /* 將元素設定為 CSS Grid 容器，啟用網格布局模式 */
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 20px;
+            /* 設定欄位與欄位、列與列之間的間距為 20px */
             padding: 20px;
         }
 
@@ -367,7 +372,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <div class="form-group">
             <input type="text" name="name" placeholder="姓名" required>
             <input type="text" name="address" placeholder="地址" required>
-            <input type="text" name="phone" placeholder="電話" required>
+            <input type="text" name="phone" placeholder="電話" required pattern="^09\d{8}$" inputmode="numeric" title="請輸入正確的 10 碼手機號碼（例如：0913579268）">
         </div>
         <input type="hidden" name="checkout" value="1">
         <div class="form-group">
